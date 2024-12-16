@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+/media
+/static
+/venv
+*.env
+*.ini
+.tox/
+.nox/
+.coverage
+.hypothesis/
+.pytest_cache/
+
+# VS Code settings
+.vscode/
+
+# JetBrains settings
+.idea/
+
+# macOS
+.DS_Store
