@@ -40,7 +40,47 @@
                             <div class="form-group">
                                 <label for="card_number">CARD NUMBER</label>
                                 <input type="tel" class="form-control" id="card_number" name="cardNumber" maxlength="19" placeholder="Enter card number" required>
-                            </div>
+                            </div><div class="container">
+                                <form method="POST" action="{% url 'payment' %}">
+                                    {% csrf_token %}
+                                    
+                                    <!-- Card Number -->
+                                    <div class="row card-no-div">
+                                        <div class="form-group">
+                                            <label for="card_number">CARD NUMBER</label>
+                                            <input type="tel" class="form-control" id="card_number" name="cardNumber" maxlength="19" placeholder="Enter card number" required>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Card Holder Name -->
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="card_holder_name">CARD HOLDER NAME</label>
+                                            <input type="text" class="form-control" id="card_holder_name" name="cardHolderName" placeholder="Enter card holder name" required>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Expiry Month -->
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exp_month">EXPIRY MONTH</label>
+                                            <input type="text" class="form-control" id="exp_month" name="expMonth" maxlength="2" placeholder="MM" required>
+                                        </div>
+                            
+                                        <!-- Expiry Year -->
+                                        <div class="form-group col-md-6">
+                                            <label for="exp_year">EXPIRY YEAR</label>
+                                            <input type="text" class="form-control" id="exp_year" name="expYear" maxlength="4" placeholder="YYYY" required>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- CVV -->
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="cvv">CVV</label>
+                                            <input type="password" class="form-control" id="cvv" name="cvv" maxlength="4" placeholder="Enter CVV" required>
+                                        </div>
+                                    </div>
                         </div>
 
                         <!-- MetaMask Payment Option -->

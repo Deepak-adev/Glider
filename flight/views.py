@@ -354,12 +354,12 @@ def payment(request):
             if request.POST.get('ticket2'):
                 ticket2_id = request.POST['ticket2']
                 t2 = True
-            fare = request.POST.get('fare')
-            card_number = request.POST['cardNumber']
-            card_holder_name = request.POST['cardHolderName']
-            exp_month = request.POST['expMonth']
-            exp_year = request.POST['expYear']
-            cvv = request.POST['cvv']
+            fare = request.POST.get('fare', None)
+            card_number = request.POST.get('cardNumber', None)
+            card_holder_name = request.POST.get('cardHolderName', None)
+            exp_month = request.POST.get('expMonth', None)
+            exp_year = request.POST.get('expYear', None)
+            cvv = request.POST.get('cvv', None)
 
             try:
                 ticket = Ticket.objects.get(id=ticket_id)
