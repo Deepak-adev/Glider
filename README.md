@@ -13,7 +13,7 @@ Click on the image above or the link below to watch the video demonstration:
 
 ## Presentation 📑  
 You can view the project presentation (PPT) here:  
-🔗 [Download the Presentation](./path-to-your-ppt-file.pptx)
+🔗 [Download the Presentation](https://drive.google.com/file/d/1Hps_Jn6d5gUQIYbAn4JIw3Gqj3EKHN_L/view?usp=drive_link)
 
 ---
 
